@@ -1,0 +1,48 @@
+.bs-checkbox {
+    display: flex;
+    align-items: center;
+    width: min-content;
+    transition: .3s;
+    white-space: nowrap;
+
+    &:active {
+        transform: scale(.95);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    label {
+        white-space: nowrap;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    input[type='checkbox'] {
+        margin : 5px !important;
+        -webkit-appearance:none;
+        width:15px;
+        height:15px;
+        border:2px solid #51beb3;
+        outline:none;
+        display: flex;
+    }
+
+    input[type='checkbox']:before {
+        content:'';
+        display:block;
+        width:5px;
+        height:5px;
+        margin: auto;    
+        border-radius:50%;    
+    }
+
+    input[type='checkbox']:checked:before {
+        content: url('../../assets/icons/check.svg');
+        transform: scale(.9);
+        margin-left: 0px;
+        margin-top: -5px;
+    }
+}

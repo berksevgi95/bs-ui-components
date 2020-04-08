@@ -1,0 +1,33 @@
+.bs-button {
+    border: none;
+    padding: 5px 10px 5px 10px;
+    outline: none;
+    transition: .3s;
+    background-color: #dddddd;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #bcbcbc;
+    }
+
+    &:active {
+        transform: scale(.95);
+    }
+}
+
+
+.bs-button.bs-secondary {
+    background-color: #51beb3 !important;
+    color: white;
+
+    &:hover {
+        background: #429990 !important;
+    }
+}
+
+
+.bs-button.bs-alternative {
+    background-color: transparent !important;
+    color: #51beb3;
+    box-shadow: 0 0 0 1px #51beb3;
+}

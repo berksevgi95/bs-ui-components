@@ -1,0 +1,51 @@
+.bs-chip {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px 5px 10px;;
+    width: min-content;
+    transition: .3s;
+    background-color: #dddddd;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #bcbcbc;
+    }
+    
+    img {
+        margin-left: 5px;
+        transform: scale(.9);
+        transition: .3s;
+        
+        &:hover {
+            transform: scale(1);
+        }
+
+        &:active {
+            transform: scale(.8);
+        }
+    }
+}
+
+.bs-chip.bs-secondary {
+    background-color: #51beb3 !important;
+    color: white;
+
+    &:hover {
+        background: #429990 !important;
+    }
+
+    img {
+        filter: brightness(0) invert(1);
+    }
+    
+}
+
+.bs-chip.bs-alternative {
+    background-color: transparent !important;
+    color: #51beb3;
+    box-shadow: 0 0 0 1px #51beb3;
+    
+    img {
+        filter: invert(70%) sepia(8%) saturate(2260%) hue-rotate(125deg) brightness(95%) contrast(86%);
+    }
+}
