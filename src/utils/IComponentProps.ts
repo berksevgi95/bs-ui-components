@@ -1,9 +1,7 @@
-export enum BSTheme {
-  PRIMARY = '',
-  SECONDARY = 'bs-secondary',
-  ALTERNATIVE = 'bs-alternative'
-}
+import BSTheme from './BSTheme';
 
-export interface IComponentProps {
+interface IComponentProps {
   theme: BSTheme
 }
+
+export default IComponentProps;

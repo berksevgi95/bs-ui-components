@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import * as React from 'react';
 
-import { IComponentProps } from '../../utils/IComponentProps';
+import { IComponentProps } from '../../utils';
 
 import '../../index.scss';
 import './Select.scss';

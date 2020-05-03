@@ -3,7 +3,8 @@ import React from 'react';
 import { v1 as uuidV1 } from 'uuid';
 import Button from '../Button/Button';
 import CloseIcon from '../../assets/icons/close.svg';
-import { IComponentProps } from '../../utils/IComponentProps';
+
+import { IComponentProps } from '../../utils';
 
 import '../../index.scss';
 import './Dialog.scss';

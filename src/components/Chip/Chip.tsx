@@ -2,7 +2,7 @@
 import React from 'react';
 
 import CloseIcon from '../../assets/icons/close.svg';
-import { IComponentProps } from '../../utils/IComponentProps';
+import { IComponentProps } from '../../utils';
 
 import './Chip.scss';
 import '../../index.scss';

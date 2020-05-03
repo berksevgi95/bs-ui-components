@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 
-export { IComponentProps } from './utils';
+export { BSTheme } from './utils';
 
 export { default as Button } from './components/Button/Button';
 export { default as Checkbox } from './components/Checkbox/Checkbox';
