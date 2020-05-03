@@ -1,0 +1,31 @@
+.bs-table {
+    border-collapse: collapse;
+    width: 100%;
+
+    thead {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    td, th {
+        text-align: left;
+        padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f5f5f5;
+    }
+
+    tfoot {
+        th {
+            padding: 0px;
+
+            button {
+                margin-top: 10px;
+                margin-left: 5px;
+            }
+            
+        }
+    }
+    
+}
+  
