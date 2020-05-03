@@ -42,7 +42,7 @@ const Input: React.FC<IInputProps> = ({
   theme,
   ...props
 }) => (
-  <label className={`bs bs-input ${className || ''} ${theme}`} htmlFor={id || 'text'}>
+  <label className={`bs bs-input ${theme}`} htmlFor={id || 'text'}>
     {children && (
       <div>
         {children}
@@ -52,7 +52,7 @@ const Input: React.FC<IInputProps> = ({
       id={id || 'text'}
       type="text"
       name={name}
-      className="bs"
+      className={`bs ${className || ''}`}
       {...props}
     />
   </label>

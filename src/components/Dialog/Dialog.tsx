@@ -95,13 +95,15 @@ const Dialog:React.FC<IDialogProps> = ({
         <div className="content">
           {children}
         </div>
-        <div className="actions">
-          {actions && actions.length > 0 && actions.map((action: IActionsProps) => (
-            <Button key={uuidV1()} {...action}>
-              {action.children}
-            </Button>
-          ))}
-        </div>
+        {actions && actions.length > 0 && (
+          <div className="actions">
+            {actions.map((action: IActionsProps) => (
+              <Button key={uuidV1()} {...action}>
+                {action.children}
+              </Button>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   ) : (
