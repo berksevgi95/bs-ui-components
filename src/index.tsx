@@ -3,6 +3,7 @@
 export { BSTheme } from './utils';
 
 export { default as Button } from './components/Button/Button';
+export { default as Input } from './components/Input/Input';
 export { default as Checkbox } from './components/Checkbox/Checkbox';
 export { default as Chip } from './components/Chip/Chip';
 export { default as Dialog } from './components/Dialog/Dialog';

@@ -1,0 +1,12 @@
+.bs-input {
+    outline: none;
+    transition: .3s transform;
+
+    &:active {
+        transform: scale(.95);
+    }
+
+    &:focus {
+        border: 2px solid #51beb3;
+    }
+}
