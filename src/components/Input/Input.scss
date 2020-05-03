@@ -1,12 +1,53 @@
 .bs-input {
-    outline: none;
-    transition: .3s transform;
+    width: min-content;
+    align-items: center;
+    white-space: nowrap;
 
-    &:active {
-        transform: scale(.95);
+    & > div {
+        margin-bottom: 5px !important;
+        width: 100%;
     }
 
-    &:focus {
-        border: 2px solid #51beb3;
+    input[type='text'] {
+        transition: .3s;
+        -webkit-appearance:none;
+        background-color: #dddddd;
+        border:2px solid #dddddd;
+        outline:none;
+        display: flex;
+
+        &:active {
+            transform: scale(.95);
+        }
+
+        &:hover {
+            background-color: #cccccc;
+            border:2px solid #cccccc;
+        }
+    }
+}
+
+.bs-input.bs-secondary {
+
+    input[type='text'] {
+        transition: .3s;
+        -webkit-appearance:none;
+        background-color: transparent;
+        // border:2px solid #51beb3;
+        border:2px solid #dddddd;
+        outline:none;
+        display: flex;
+
+        &:active {
+            transform: scale(.95);
+        }
+
+        &:focus {
+            border:2px solid #51beb3;
+        }
+        // &:hover {
+        //     background-color: #cccccc;
+        //     border:2px solid #cccccc;
+        // }
     }
 }
