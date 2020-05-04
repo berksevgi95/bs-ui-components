@@ -80,6 +80,7 @@ const Select: React.FC<ISelectProps> = ({
             && options.length > 0
             && options.map((option: IOption) => (
               <button
+                title={option.label}
                 name={name}
                 key={option.label.toString()}
                 className="bs bs-option"

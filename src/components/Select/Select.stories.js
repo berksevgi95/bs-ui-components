@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import Select from './Select';
-import { BSTheme } from '../../utils/IComponentProps';
+import { BSTheme } from '../../utils';
 
 export default {
   title: 'Select',
@@ -15,7 +15,7 @@ export const Default = () => {
       value={value}
       onChange={(e) => setValue(e.target.value)}
       options={[{
-        label: 'A',
+        label: 'A aslkdjalksjdlka lkajlkdjslkajsdlk kjalskdjasd',
         value: 'a',
       }, {
         label: 'B',
