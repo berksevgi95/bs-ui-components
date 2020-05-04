@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import Dialog from './Dialog';
-import { BSTheme } from '../../utils/IComponentProps';
 import Button from '../Button/Button';
+import { BSTheme } from '../../utils';
 
 export default {
   title: 'Dialog',
@@ -104,6 +104,140 @@ export const AlternativeTheme = () => {
         ]}
       >
         Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+        Dialog
+
       </Dialog>
     </>
   );
