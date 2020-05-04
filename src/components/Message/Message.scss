@@ -2,16 +2,12 @@
     overflow: hidden;
     position: fixed;
     width: 300px;
+    z-index: 999;
 
     .bs-message-container {
-        // position: fixed;
-        // z-index: 999;
-        // top: 20px;
-        // right: 20px;
         margin: 15px;
         padding: 15px;
         animation: fadein .5s;
-        // min-width: 200px;
         background: rgb(221, 221, 221);
     }
     
