@@ -8,6 +8,22 @@
         width: 100%;
     }
 
+    .bs-input-error {
+        background-color: #db0000;
+        border:2px solid #db0000;
+        color: white;
+
+        &:hover {
+            background-color: #aa0101;
+            border:2px solid #aa0101;
+        }
+    }
+
+    & > span {
+        color: #db0000;
+        animation: fadein .5s;
+    }
+
     input {
         border-radius: 0px;
         padding-left: 5px;
@@ -32,6 +48,16 @@
 }
 
 .bs-input.bs-secondary {
+
+    .bs-input-error {
+        background-color: inherit;
+        border:2px solid #db0000;
+        color: inherit;
+
+        &:hover {
+            border:2px solid inherit;
+        }
+    }
 
     input {
         background-color: transparent;

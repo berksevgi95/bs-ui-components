@@ -10,3 +10,7 @@ export default {
 export const Default = () => <Input>Input</Input>;
 
 export const SecondaryTheme = () => <Input theme={BSTheme.SECONDARY}>Input</Input>;
+
+export const ErrorMessage = () => <Input errorMsg="Error!">Input</Input>;
+
+export const ErrorMessageWithSecondaryTheme = () => <Input theme={BSTheme.SECONDARY} errorMsg="Error!">Input</Input>;

@@ -1,27 +1,3 @@
-// /* eslint-disable react/jsx-props-no-spreading */
-// import React from 'react';
-// import { IComponentProps } from '../../utils';
-
-// import '../../index.scss';
-// import './Input.scss';
-
-// export interface IInputProps
-//   extends React.ComponentProps<'input'>, IComponentProps {
-// }
-
-// const Input: React.FC<IInputProps> = ({
-//   className,
-//   ...props
-// }) => (
-//   <input
-//     className="bs bs-input"
-//     {...props}
-//   />
-// );
-
-// export default Input;
-
-
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 
@@ -32,6 +8,7 @@ import './Input.scss';
 
 export interface IInputProps
   extends React.ComponentProps<'input'>, IComponentProps {
+  errorMsg?: string
 }
 
 const Input: React.FC<IInputProps> = ({
@@ -40,9 +17,13 @@ const Input: React.FC<IInputProps> = ({
   name,
   children,
   theme,
+  errorMsg,
   ...props
 }) => (
-  <label className={`bs bs-input ${theme}`} htmlFor={id || 'text'}>
+  <label
+    className={`bs bs-input ${theme}`}
+    htmlFor={id || 'text'}
+  >
     {children && (
       <div>
         {children}
@@ -52,9 +33,14 @@ const Input: React.FC<IInputProps> = ({
       id={id || 'text'}
       type="text"
       name={name}
-      className={`bs ${className || ''}`}
+      className={`bs ${errorMsg ? 'bs-input-error' : ''} ${className || ''}`}
       {...props}
     />
+    {errorMsg && (
+      <span>
+        {errorMsg}
+      </span>
+    )}
   </label>
 );
 
