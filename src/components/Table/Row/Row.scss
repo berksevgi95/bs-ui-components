@@ -1,0 +1,25 @@
+.bs-table-row {
+  background: #eeeeee;
+  height: 50px;
+  transition: .3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #dddddd;
+  }
+
+  &:active {
+      transform: scale(.99);
+  }
+}
+
+
+.bs-table-row.bs-secondary {
+
+  background: transparent;
+
+  &:nth-child(even) {
+      background-color: #f5f5f5;
+  }
+  
+}

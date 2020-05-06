@@ -10,3 +10,4 @@ export { default as Dialog } from './components/Dialog/Dialog';
 export { default as Message, EMessageTypes, EMessagePosition } from './components/Message/Message';
 export { default as Radiobutton } from './components/Radiobutton/Radiobutton';
 export { default as Select } from './components/Select/Select';
+export { default as Table } from './components/Table/Table';
