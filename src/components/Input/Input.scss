@@ -1,4 +1,6 @@
+
 .bs-input {
+  min-width: 220px;
     width: min-content;
     align-items: center;
     white-space: nowrap;
@@ -6,25 +8,52 @@
     & > div {
         margin-bottom: 5px !important;
         width: 100%;
+        position: relative;
     }
 
     .bs-input-error {
-        background-color: #db0000;
-        border:2px solid #db0000;
-        color: white;
+        background-color: #ffadad;
+        border:2px solid #ffadad;
 
         &:hover {
-            background-color: #aa0101;
-            border:2px solid #aa0101;
+            background-color: #fb8989;
+            border:2px solid #fb8989;
         }
     }
 
-    & > span {
-        color: #db0000;
-        animation: fadein .5s;
+    .bs-input-error-message {
+      animation: fadein .5s;
+      position: absolute;
+      right: 0;
+      padding: 10px;
+      white-space: normal;
+      left: 100%;
+    
+      min-width: 100px;
+      color: white;
+    
+      z-index: 1;
+      height: auto;
+      background-color: #db0000;
+      
+      &:after{
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -20px;
+        right: auto;
+        top: 0px;
+        bottom: auto;
+        border: 22px solid;
+        border-color: #db0000 transparent transparent transparent;
+      }
     }
+    
 
     input {
+        box-sizing: border-box;
+        width: 100%;
         border-radius: 0px;
         padding-left: 5px;
         padding-right: 5px;

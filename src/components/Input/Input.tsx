@@ -20,29 +20,29 @@ const Input: React.FC<IInputProps> = React.forwardRef(({
   errorMsg,
   ...props
 }, ref) => (
-  <label
+  <div
     className={`bs bs-input ${theme}`}
-    htmlFor={id || 'text'}
   >
     {children && (
       <div>
         {children}
       </div>
     )}
-    <input
-      ref={ref}
-      id={id || 'text'}
-      type="text"
-      name={name}
-      className={`bs ${errorMsg ? 'bs-input-error' : ''} ${className || ''}`}
-      {...props}
-    />
-    {errorMsg && (
-      <span>
-        {errorMsg}
-      </span>
-    )}
-  </label>
+    <div>
+      <input
+        ref={ref}
+        type="text"
+        name={name}
+        className={`bs ${errorMsg ? 'bs-input-error' : ''} ${className || ''}`}
+        {...props}
+      />
+      {errorMsg && (
+        <div className="bs-input-error-message">
+          {errorMsg}
+        </div>
+      )}
+    </div>
+  </div>
 ));
 
 export default Input;
