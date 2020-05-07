@@ -11,7 +11,7 @@ export interface IInputProps
   errorMsg?: string
 }
 
-const Input: React.FC<IInputProps> = ({
+const Input: React.FC<IInputProps> = React.forwardRef(({
   className,
   id,
   name,
@@ -19,7 +19,7 @@ const Input: React.FC<IInputProps> = ({
   theme,
   errorMsg,
   ...props
-}) => (
+}, ref) => (
   <label
     className={`bs bs-input ${theme}`}
     htmlFor={id || 'text'}
@@ -30,6 +30,7 @@ const Input: React.FC<IInputProps> = ({
       </div>
     )}
     <input
+      ref={ref}
       id={id || 'text'}
       type="text"
       name={name}
@@ -42,6 +43,6 @@ const Input: React.FC<IInputProps> = ({
       </span>
     )}
   </label>
-);
+));
 
 export default Input;
