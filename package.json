@@ -1,6 +1,6 @@
 {
   "name": "bs-ui-components",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",

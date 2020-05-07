@@ -24,9 +24,9 @@ const Input: React.FC<IInputProps> = React.forwardRef(({
   const [errorMessage, setErrorMessage] = React.useState<string>(errorMsg);
 
   React.useEffect(() => {
-    if (errorMsg) {
-      setErrorMessage(errorMsg);
-    }
+    // if (errorMsg) {
+    setErrorMessage(errorMsg);
+    // }
   }, [errorMsg]);
 
   const handleOnInvalid = (event: React.FormEvent<HTMLInputElement>) => {
