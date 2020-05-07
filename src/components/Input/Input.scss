@@ -1,103 +1,101 @@
 
 .bs-input {
   min-width: 220px;
-    width: min-content;
-    align-items: center;
-    white-space: nowrap;
+  width: min-content;
+  align-items: center;
+  white-space: nowrap;
 
-    & > div {
-        margin-bottom: 5px !important;
-        width: 100%;
-        position: relative;
-    }
+  & > div {
+      margin-bottom: 5px !important;
+      width: 100%;
+      position: relative;
+  }
 
-    .bs-input-error {
-        background-color: #ffadad;
-        border:2px solid #ffadad;
+  .bs-input-error {
+      background-color: #ffadad;
+      border:2px solid #ffadad;
 
-        &:hover {
-            background-color: #fb8989;
-            border:2px solid #fb8989;
-        }
-    }
-
-    .bs-input-error-message {
-      animation: fadein .5s;
-      position: absolute;
-      right: 0;
-      padding: 10px;
-      white-space: normal;
-      left: 100%;
-    
-      min-width: 100px;
-      color: white;
-    
-      z-index: 1;
-      height: auto;
-      background-color: #db0000;
-      
-      &:after{
-        content: ' ';
-        position: absolute;
-        width: 0;
-        height: 0;
-        left: -20px;
-        right: auto;
-        top: 0px;
-        bottom: auto;
-        border: 22px solid;
-        border-color: #db0000 transparent transparent transparent;
+      &:hover {
+          background-color: #fb8989;
+          border:2px solid #fb8989;
       }
-    }
+  }
+
+  .bs-input-error-message {
+    animation: fadein .5s;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    white-space: normal;
+    left: 100%;
+  
+    min-width: 100px;
+    color: white;
+  
+    z-index: 1;
+    height: auto;
+    background-color: #db0000;
     
-
-    input {
-        box-sizing: border-box;
-        width: 100%;
-        border-radius: 0px;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        transition: .3s;
-        background-color: #dddddd;
-        border:2px solid #dddddd;
-        outline:none;
-        display: flex;
-
-        &:active {
-            transform: scale(.95);
-        }
-
-        &:hover {
-            background-color: #cccccc;
-            border:2px solid #cccccc;
-        }
+    &:after{
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: -20px;
+      right: auto;
+      top: 0px;
+      bottom: auto;
+      border: 22px solid;
+      border-color: #db0000 transparent transparent transparent;
     }
+  }
+  
+
+  input {
+      box-sizing: border-box;
+      width: 100%;
+      border-radius: 0px;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      transition: .3s;
+      background-color: #dddddd;
+      border:2px solid #dddddd;
+      outline:none;
+
+      &:active {
+          transform: scale(.95);
+      }
+
+      &:hover {
+          background-color: #cccccc;
+          border:2px solid #cccccc;
+      }
+  }
 }
 
 .bs-input.bs-secondary {
+  .bs-input-error {
+      background-color: inherit;
+      border:2px solid #db0000;
+      color: inherit;
 
-    .bs-input-error {
-        background-color: inherit;
-        border:2px solid #db0000;
-        color: inherit;
+      &:hover {
+          border:2px solid inherit;
+      }
+  }
 
-        &:hover {
-            border:2px solid inherit;
-        }
-    }
+  input {
+      background-color: transparent;
+      border:2px solid #dddddd;
 
-    input {
-        background-color: transparent;
-        border:2px solid #dddddd;
+      &:active {
+          transform: scale(.95);
+      }
 
-        &:active {
-            transform: scale(.95);
-        }
-
-        &:focus {
-            border:2px solid #51beb3;
-        }
-    }
+      &:focus {
+          border:2px solid #51beb3;
+      }
+  }
 }

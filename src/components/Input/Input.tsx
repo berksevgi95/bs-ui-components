@@ -8,6 +8,7 @@ import './Input.scss';
 
 export interface IInputProps
   extends React.ComponentProps<'input'>, IComponentProps {
+  inputClassname?: string,
   errorMsg?: string
 }
 
@@ -18,15 +19,14 @@ const Input: React.FC<IInputProps> = React.forwardRef(({
   children,
   theme,
   errorMsg,
+  inputClassname,
   onInvalid,
   ...props
 }, ref) => {
   const [errorMessage, setErrorMessage] = React.useState<string>(errorMsg);
 
   React.useEffect(() => {
-    // if (errorMsg) {
     setErrorMessage(errorMsg);
-    // }
   }, [errorMsg]);
 
   const handleOnInvalid = (event: React.FormEvent<HTMLInputElement>) => {
@@ -39,7 +39,7 @@ const Input: React.FC<IInputProps> = React.forwardRef(({
 
   return (
     <div
-      className={`bs bs-input ${theme}`}
+      className={`bs bs-input ${className || ''} ${theme}`}
     >
       {children && (
         <div>
@@ -51,7 +51,7 @@ const Input: React.FC<IInputProps> = React.forwardRef(({
           ref={ref}
           type="text"
           name={name}
-          className={`bs ${errorMessage ? 'bs-input-error' : ''} ${className || ''}`}
+          className={`bs ${errorMessage ? 'bs-input-error' : ''} ${inputClassname || ''}`}
           onInvalid={handleOnInvalid}
           {...props}
         />
