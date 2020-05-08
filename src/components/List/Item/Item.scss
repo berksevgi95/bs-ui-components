@@ -1,0 +1,53 @@
+.bs-list-item {
+
+    padding: 10px;
+    display: flex;
+    transition: .3s;
+    background-color: #dddddd;
+    // border:2px solid #dddddd;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    outline:none;
+
+    &:active {
+        transform: scale(.99);
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+            font-size: 15px;
+            font-weight: bolder;
+        }
+
+        .subtitle {
+            font-size: 10px;
+        }
+
+        .actions {
+            float: right;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+
+.bs-list-item.bs-secondary {
+
+    background-color: transparent;
+    border-top: 1px solid #dddddd;
+
+    &:first-child {
+        border-top: none;
+    }
+}

@@ -15,7 +15,7 @@ export const Default = () => {
       value={value}
       onChange={(e) => setValue(e.target.value)}
       options={[{
-        label: 'A aslkdjalksjdlka lkajlkdjslkajsdlk kjalskdjasd',
+        label: 'A',
         value: 'a',
       }, {
         label: 'B',
