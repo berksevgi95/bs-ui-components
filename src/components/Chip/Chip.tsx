@@ -9,12 +9,14 @@ import '../../index.scss';
 
 export interface IChipProps
   extends IComponentProps, React.ComponentProps<'div'> {
+  onClose?: (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => void,
 }
 
 const Chip: React.FC<IChipProps> = ({
   theme,
   className,
   children,
+  onClose,
   ...props
 }) => (
   <div
@@ -22,7 +24,14 @@ const Chip: React.FC<IChipProps> = ({
     {...props}
   >
     {children}
-    <img src={CloseIcon} alt="close-icon" />
+    {onClose && (
+      <img
+        src={CloseIcon}
+        alt="close-icon"
+        role="presentation"
+        onClick={onClose}
+      />
+    )}
 
   </div>
 );
