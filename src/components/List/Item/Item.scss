@@ -4,7 +4,6 @@
     display: flex;
     transition: .3s;
     background-color: #dddddd;
-    // border:2px solid #dddddd;
     margin-top: 5px;
     margin-bottom: 5px;
     outline:none;
@@ -16,7 +15,7 @@
     .icon {
         display: flex;
         align-items: center;
-        margin-right: 15px;
+        margin-right: 10px;
     }
 
     .content {
@@ -30,7 +29,7 @@
         }
 
         .subtitle {
-            font-size: 10px;
+            font-size: 12px;
         }
 
         .actions {
