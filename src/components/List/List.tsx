@@ -13,8 +13,12 @@ export interface IListProps
 const List: React.FC<IListProps> = ({
   className,
   children,
+  ...props
 }) => (
-  <ul className={`bs bs-list ${className || ''}`}>
+  <ul
+    className={`bs bs-list ${className || ''}`}
+    {...props}
+  >
     {children}
   </ul>
 );

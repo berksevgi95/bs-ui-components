@@ -22,12 +22,19 @@ const Item: React.FC<IItemProps> = ({
   title,
   subtitle,
   actions,
+  ...props
 }) => (children ? (
-  <li className={`bs bs-list-item ${className || ''} ${theme}`}>
+  <li
+    className={`bs bs-list-item ${className || ''} ${theme}`}
+    {...props}
+  >
     {children}
   </li>
 ) : (
-  <li className={`bs bs-list-item integrated ${className || ''} ${theme}`}>
+  <li
+    className={`bs bs-list-item integrated ${className || ''} ${theme}`}
+    {...props}
+  >
     <div className="icon">
       {icon}
     </div>
