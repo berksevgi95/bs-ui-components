@@ -15,6 +15,9 @@
     }
 }
 
+.bs-button.active {
+    background-color: #bcbcbc;
+}
 
 .bs-button.bs-secondary {
     background-color: #51beb3 !important;
@@ -25,6 +28,9 @@
     }
 }
 
+.bs-button.active.bs-secondary {
+    background-color: #429990 !important;
+}
 
 .bs-button.bs-alternative {
     background-color: transparent !important;

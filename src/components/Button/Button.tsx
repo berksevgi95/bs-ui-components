@@ -8,17 +8,19 @@ import '../../index.scss';
 
 export interface IButtonProps
   extends React.ComponentProps<'button'>, IComponentProps {
+  active?: boolean
 }
 
 const Button: React.FC<IButtonProps> = ({
   theme,
   children,
   className,
+  active,
   ...props
 }) => (
   <button
     type="button"
-    className={`bs bs-button ${className || ''} ${theme}`}
+    className={`bs bs-button ${active ? 'active' : ''} ${className || ''} ${theme}`}
     {...props}
   >
     {children}

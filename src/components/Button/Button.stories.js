@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import Button from './Button';
-import { BSTheme } from '../../utils/IComponentProps';
+import { BSTheme } from '../../utils';
 
 export default {
   title: 'Button',

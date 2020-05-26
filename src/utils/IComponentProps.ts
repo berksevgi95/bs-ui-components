@@ -1,7 +1,8 @@
 import BSTheme from './BSTheme';
 
 interface IComponentProps {
-  theme: BSTheme
+  theme?: BSTheme,
+  className?: string,
 }
 
 export default IComponentProps;
