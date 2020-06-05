@@ -29,6 +29,7 @@ const TextEditor: React.FC<ITextareaProps> = ({
   className,
   onChange,
   value,
+  theme
 }) => {
   const containerRef = React.useRef<any>();
   const editorRef = React.useRef<any>();
@@ -118,6 +119,7 @@ const TextEditor: React.FC<ITextareaProps> = ({
               active={type.style === blockType}
               key={type.label}
               onClick={handleClickBlockStyle(type.style)}
+              theme={theme}
             >
               {type.label}
             </Button>
@@ -131,6 +133,7 @@ const TextEditor: React.FC<ITextareaProps> = ({
             <Button
               key={type.label}
               onClick={handleClickBlockStyle(type.style)}
+              theme={theme}
             >
               {type.label}
             </Button>
@@ -145,6 +148,7 @@ const TextEditor: React.FC<ITextareaProps> = ({
               active={currentStyle.has(type.style)}
               key={type.label}
               onClick={handleClickInlineStyle(type.style)}
+              theme={theme}
             >
               {type.icon}
             </Button>
