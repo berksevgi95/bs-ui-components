@@ -35,7 +35,6 @@ export default {
     commonjs({
       include: [
         'node_modules/**',
-        'node_modules/primereact/**',
       ],
       exclude: ['**/*.stories.js'],
       namedExports: {
@@ -47,18 +46,6 @@ export default {
         ],
         'node_modules/react-dom/index.js': ['render'],
         'node_modules/formik/node_modules/scheduler/index.js': ['unstable_runWithPriority', 'LowPriority'],
-        'node_modules/primereact/inputtext.js': ['InputText'],
-        'node_modules/primereact/button.js': ['Button'],
-        'node_modules/primereact/checkbox.js': ['Checkbox'],
-        'node_modules/primereact/growl.js': ['Growl'],
-        'node_modules/primereact/listbox.js': ['ListBox'],
-        'node_modules/primereact/dialog.js': ['Dialog'],
-        'node_modules/primereact/inputswitch.js': ['InputSwitch'],
-        'node_modules/primereact/datatable.js': ['DataTable'],
-        'node_modules/primereact/column.js': ['Column'],
-        'node_modules/primereact/inputtextarea.js': ['InputTextarea'],
-        'node_modules/primereact/card.js': ['Card'],
-        'node_modules/primereact/calendar.js': ['Calendar'],
       },
     }),
     image({

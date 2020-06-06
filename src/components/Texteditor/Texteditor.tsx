@@ -1,8 +1,5 @@
 import React from 'react';
-import Draft, {
-  convertToRaw,
-  convertFromRaw,
-} from 'draft-js';
+import Draft from 'draft-js';
 import Button from '../Button/Button';
 import { IComponentProps } from '../../utils';
 
@@ -14,6 +11,8 @@ const {
   EditorState,
   RichUtils,
   Modifier,
+  convertToRaw,
+  convertFromRaw,
 } = Draft;
 
 export interface ITextareaProps extends IComponentProps {
