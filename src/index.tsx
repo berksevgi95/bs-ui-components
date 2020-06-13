@@ -14,3 +14,4 @@ export { default as Table } from './components/Table/Table';
 export { default as List } from './components/List/List';
 export { default as Texteditor } from './components/Texteditor/Texteditor';
 export { default as FloatButton } from './components/FloatButton/FloatButton';
+export { default as ContextMenu } from './components/ContextMenu/ContextMenu';

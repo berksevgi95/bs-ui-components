@@ -1,0 +1,20 @@
+.bs-contextmenu {
+    position: fixed;
+    background: #dddddd;
+    animation: fadein .25s;
+    overflow: auto;
+    max-width: 200px;
+
+    .bs-menu-item {
+        padding: 5px 10px 5px 10px !important;
+        margin: 0px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            transform: scale(.95);
+        }
+    }
+}
