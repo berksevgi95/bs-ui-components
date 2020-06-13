@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { IComponentProps, BSTheme } from '../../utils';
+import { IComponentProps } from '../../utils';
 
 import './ContextMenu.scss';
-import List from '../List/List';
+import Menu from './Menu/Menu';
 
 export interface IContextMenuProps extends IComponentProps {
     items: IContextMenuItem[] | JSX.Element,
@@ -53,81 +53,18 @@ const ContextMenu: React.FC<IContextMenuProps> = ({
         })
     }
 
-    const handleClickItem = (onClick) => (e) => {
-        setMenuCoord(null);
-        if (onClick) {
-            onClick(e)
-        }
-    }
-
-    // const renderMenu = (items, menuCoord) => {
-    //     return items && menuCoord && (
-    //         <List.List
-    //             className={`bs-contextmenu ${className || ''}`}
-    //             ref={menuRef}
-    //             style={{
-    //                 ...menuCoord,
-    //                 ...style
-    //             }}
-    //         >
-    //             {(items as IContextMenuItem[]).map((item, index) => item.children ? (
-    //                 renderMenu(item.children, {left: 50, top: 50})
-    //             ) : (
-    //                 <List.Item
-    //                     key={`${item.title}${index}`}
-    //                     className="bs-menu-item"
-    //                     theme={BSTheme.SECONDARY}
-    //                     onClick={handleClickItem(item.onClick)}
-    //                     onMouseEnter={(e) => }
-    //                 >
-    //                     {item.title}
-    //                 </List.Item>
-    //             ))}
-    //         </List.List>
-    //     )
-    // }
-
     return (
         <>
             {children && React.cloneElement((children as any), {
                 onContextMenu: defineContextMenu
             })}
-            {/* {renderMenu(items, menuCoord)} */}
-            {items && items instanceof Array ? menuCoord && (
-                <List.List
-                    className={`bs-contextmenu ${className || ''}`}
+            { menuCoord && (
+                <Menu
+                    items={items}
                     ref={menuRef}
-                    style={{
-                        ...menuCoord,
-                        ...style
-                    }}
-                >
-                    {(items as IContextMenuItem[]).map((item, index) => (
-                        <List.Item
-                            key={`${item.title}${index}`}
-                            className="bs-menu-item"
-                            theme={BSTheme.SECONDARY}
-                            onClick={handleClickItem(item.onClick)}
-                        >
-                            {item.title}
-                        </List.Item>
-                    ))}
-                </List.List>
-            ) : menuCoord && (
-                <div
-                    className={`
-                        bs
-                        bs-contextmenu
-                        ${className || ''}
-                    `}
-                    ref={menuRef}
-                    style={{
-                        ...menuCoord,
-                        ...style
-                    }}
-                >
-                    {items}
-                </div>
+                    coord={menuCoord}
+                    setCoord={setMenuCoord}
+                />
             )}
         </>
     )

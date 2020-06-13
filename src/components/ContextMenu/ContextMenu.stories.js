@@ -10,46 +10,45 @@ export default {
 export const Default = () => (
   <ContextMenu
     items={[{
-      icon: 'zs',
-      onClick: (e) => {console.log('lşakd')},
-      title: 'şsldşallşk kajdk lkjasldkjal lkajsldj'
+      title: 'Item 1'
     }, {
-      icon: 'zs',
       onClick: (e) => {console.log('lşakd')},
-      title: 'şsldşallşk'
+      title: 'Item 2'
     }, {
-      icon: 'zs',
       onClick: (e) => {console.log('lşakd')},
-      title: 'şsldşallşk kljasdlkj'
+      title: 'Item 3'
     }, {
-      icon: 'zs',
       onClick: (e) => {console.log('lşakd')},
-      title: 'şsldşallşk'
+      title: 'Item 4'
     }, {
-      icon: 'zs',
-      // onClick: (e) => {console.log('lşakd')},
-      title: 'şsldşallşk',
+      title: 'Item 5',
       children: [{
-        icon: 'asdads',
-        title: 'zöçmcxv',
+        title: 'Item 5.1',
         onClick: (e) => {console.log('lşakd')},
       }, {
-        icon: 'asdads',
-        title: 'zöçmcxv',
+        title: 'Item 5.2',
+        onClick: (e) => {console.log('lşakd')},
+        children: [{
+          title: 'Item 5.2.1',
+          onClick: (e) => {console.log('lşakd')},
+        }, {
+          title: 'Item 5.2.2',
+          onClick: (e) => {console.log('lşakd')},
+        }, {
+          title: 'Item 5.2.3',
+          onClick: (e) => {console.log('lşakd')},
+        }]
+      }, {
+        title: 'Item 5.3',
         onClick: (e) => {console.log('lşakd')},
       }, {
-        icon: 'asdads',
-        title: 'zöçmcxv',
-        onClick: (e) => {console.log('lşakd')},
-      }, {
-        icon: 'asdads',
-        title: 'zöçmcxv',
+        title: 'Item 5.4',
         onClick: (e) => {console.log('lşakd')},
       }]
     }]}
   >
     <Button>
-      asldkaşsdk
+      Right Click on me
     </Button>
   </ContextMenu>
 );
@@ -60,7 +59,7 @@ export const CustomItem = () => (
     items={<div>asdsad</div>}
   >
     <Button>
-      asldkaşsdk
+      Right Click on me
     </Button>
   </ContextMenu>
 );

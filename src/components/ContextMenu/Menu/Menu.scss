@@ -1,0 +1,18 @@
+.bs-menu-item {
+    padding: 5px 10px 5px 10px !important;
+    margin: 0px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #bcbcbc;
+    }
+
+    img {
+        width: 10px;
+        height: 10px;
+        margin-left: 10px;
+    }
+}
