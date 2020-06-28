@@ -10,14 +10,14 @@ module.exports = {
         '@typescript-eslint',
     ],
     
-    //If you want to use regular eslint configuration, then remove this comment block
+    //If you want to use regular eslint configuration, toggle comments of these lines
     // extends: [
     //     'eslint:recommended',
     //     'plugin:@typescript-eslint/eslint-recommended',
     //     'plugin:@typescript-eslint/recommended',
     // ],
 
-    //If you want to use airbnb eslint configuration, then remove this comment block
+    //If you want to use airbnb eslint configuration, toggle comments of these lines
     extends: ['airbnb-typescript'],
     parserOptions: {
         project: './tsconfig.json',

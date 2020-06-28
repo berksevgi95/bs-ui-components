@@ -1,6 +1,6 @@
 {
   "name": "bs-ui-components",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",
@@ -81,7 +81,6 @@
     "moment": "^2.24.0",
     "re-carousel": "^2.4.0",
     "react-transition-group": "^4.3.0",
-    "tailwindcss": "^1.2.0",
     "uuid": "^8.0.0",
     "yup": "^0.28.3"
   }
