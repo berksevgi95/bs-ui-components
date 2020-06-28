@@ -1,4 +1,3 @@
-var webpack = require("webpack");
 var path = require("path");
 
 module.exports = async ({ config, mode }) => {
@@ -17,8 +16,6 @@ module.exports = async ({ config, mode }) => {
   });
 
   config.resolve.extensions.push(".ts", ".tsx");
-
-  config.plugins.push(new webpack.HotModuleReplacementPlugin())
 
   return config;
 };

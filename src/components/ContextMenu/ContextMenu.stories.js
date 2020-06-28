@@ -52,14 +52,3 @@ export const Default = () => (
     </Button>
   </ContextMenu>
 );
-
-
-export const CustomItem = () => (
-  <ContextMenu
-    items={<div>asdsad</div>}
-  >
-    <Button>
-      Right Click on me
-    </Button>
-  </ContextMenu>
-);

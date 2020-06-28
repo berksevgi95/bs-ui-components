@@ -5,7 +5,11 @@ import external from 'rollup-plugin-peer-deps-external';
 import resolve from 'rollup-plugin-node-resolve';
 import postcss from 'rollup-plugin-postcss';
 import image from '@rollup/plugin-image';
+import livereload from 'rollup-plugin-livereload'
 import pkg from './package.json';
+
+
+import copy from 'rollup-plugin-copy'
 
 export default {
   input: 'src/index.tsx',
@@ -21,6 +25,7 @@ export default {
   ],
   plugins: [
     external(),
+    livereload(),
     resolve({
       browser: true,
     }),
@@ -55,5 +60,11 @@ export default {
     sass({
       insert: true,
     }),
+
+    copy({
+      targets: [
+        { src: ['./src/assets/fonts', './src/assets/icons'], dest: 'build/assets' },
+      ]
+    })
   ],
 };
